@@ -1,10 +1,10 @@
-/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* root variables */
 :root {
   --primary: rgb(225, 190, 254);
   --text: rgb(210, 190, 230);
@@ -20,7 +20,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  background-image: url("assets/background.png");
+  background-image: url("assets/background.png"); /* bg image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body {
   width: 100%;
 }
 
-/* Header */
+/* header */
 header {
   display: flex;
   justify-content: space-between;
@@ -46,6 +46,7 @@ header {
   z-index: 1000;
 }
 
+/* logo header + anim */
 #logo-img {
   height: 40px;
   width: auto;
@@ -76,15 +77,17 @@ nav {
 .nav-link:hover {
   color: var(--primary);
 }
+
+
 .line {
   width: 1px;
   height: 12px;
   background: var(--glass-border);
 }
 
-/* Layout Sections */
+/* layout */
 .hero-section,
-.page-section {
+.page-section {  /* all of the sections (para di na paulit ulit) */
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -93,6 +96,7 @@ nav {
   padding: 120px 10% 80px 10%;
 }
 
+/* unique hero stuff */
 .hero-content {
   display: flex;
   align-items: center;
@@ -110,6 +114,7 @@ nav {
   color: var(--primary);
 }
 
+/* posang umiikot */
 .hero-image img {
   width: clamp(200px, 25vw, 380px);
   filter: drop-shadow(0 0 20px rgba(197, 110, 255, 0.2));
@@ -121,7 +126,7 @@ nav {
   transform: rotate(360deg);
 }
 
-/* Section Container */
+/* section */
 .section-container {
   width: 100%;
   max-width: 1100px;
@@ -141,7 +146,7 @@ nav {
   opacity: 0.8;
 }
 
-/* Cards & Grids */
+/* cards */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -149,7 +154,7 @@ nav {
   width: 100%;
 }
 
-/* Skills Section specifics */
+/* skills */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -206,7 +211,7 @@ nav {
   box-shadow: 0 0 15px rgba(225, 190, 254, 0.5);
 }
 
-/* Project Styles */
+/* project  */
 .projects-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -278,7 +283,8 @@ nav {
   object-fit: cover;
 }
 
-/* Skill Tags (Keeping your original styling just in case) */
+/* Scrapped Skill Tags lol
+
 .skills-tags {
   display: flex;
   flex-wrap: wrap;
@@ -292,9 +298,9 @@ nav {
   padding: 4px 10px;
   border-radius: 6px;
   color: var(--primary);
-}
+} */
 
-/* Contact Form */
+/* contact form */
 .contact-card {
   max-width: 700px;
   margin: 0 auto;
@@ -376,7 +382,7 @@ nav {
   box-shadow: 0 0 20px rgba(225, 190, 254, 0.4);
 }
 
-/* Footer */
+/* footer */
 footer {
   padding: 40px 10%;
   background: var(--dark);
@@ -395,7 +401,6 @@ footer {
   opacity: 0.6;
 }
 
-/* Tablet & Small Desktop Adjustments */
 @media (max-width: 1024px) {
   header {
     padding: 15px 5%;
